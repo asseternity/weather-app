@@ -6,7 +6,43 @@
     <title>Weather App</title>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <div class="container">
+      <div class="upper_bar">
+        <form>
+          <label for="search">Your city:</label>
+          <input type="text" id="search" name="search" />
+          <input type="submit" id="submit" value="Search!" />
+        </form>
+      </div>
+      <div class="bar2">Use the search function above!</div>
+      <div id="slot1" class="slot">
+        <div id="slot1_date"></div>
+        <div id="slot1_icon"></div>
+        <div id="slot1_temp" class="temp"></div>
+        <div id="slot1_bar" class="extra_bar">
+          <div id="bar1_wind" class="extra_sub"></div>
+          <div id="bar1_humidity" class="extra_sub"></div>
+        </div>
+      </div>
+      <div id="slot2" class="slot">
+        <div id="slot2_date"></div>
+        <div id="slot2_icon"></div>
+        <div id="slot2_temp" class="temp"></div>
+        <div id="slot2_bar" class="extra_bar">
+          <div id="bar2_wind" class="extra_sub"></div>
+          <div id="bar2_humidity" class="extra_sub"></div>
+        </div>
+      </div>
+      <div id="slot3" class="slot">
+        <div id="slot3_date"></div>
+        <div id="slot3_icon"></div>
+        <div id="slot3_temp" class="temp"></div>
+        <div id="slot3_bar" class="extra_bar">
+          <div id="bar3_wind" class="extra_sub"></div>
+          <div id="bar3_humidity" class="extra_sub"></div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

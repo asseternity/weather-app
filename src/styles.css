@@ -4,24 +4,129 @@
   --color3: #cccccc;
 }
 
-/*
-
 @font-face {
-    font-family: '[name]';
-    src: url('./[name].ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Tilt Neon";
+  src: url("./TiltNeon-Regular-VariableFont_XROT,YROT.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-family: 'name';
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Tilt Neon";
 }
 
-*/
+input {
+  font-family: "Tilt Neon";
+}
 
-p {
-  color: red;
+.container {
+  display: grid;
+  grid-template-areas:
+    "bar bar bar"
+    "bar2 bar2 bar2"
+    "s1 s2 s3";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upper_bar {
+  grid-area: bar;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.bar2 {
+  grid-area: bar2;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#slot1 {
+  grid-area: s1;
+}
+
+#slot2 {
+  grid-area: s2;
+}
+
+#slot3 {
+  grid-area: s3;
+}
+
+.slot {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slot img {
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.temp {
+  font-size: 200%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.extra_bar {
+  background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 50px;
+}
+
+.extra_bar div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.extra_sub {
+  font-size: 120%;
+}
+
+.extra_sub p {
+  font-size: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "bar"
+      "bar2"
+      "s1"
+      "s2"
+      "s3";
+    grid-template-columns: 1fr;
+  }
 }
